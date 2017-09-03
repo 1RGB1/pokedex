@@ -60,7 +60,7 @@
                                     <constraint firstAttribute="bottom" secondItem="d3K-QX-8SG" secondAttribute="bottom" constant="8" id="lMx-2M-VgS"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="3A0-Ld-ykf">
+                            <searchBar contentMode="redraw" placeholder="Search Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="3A0-Ld-ykf">
                                 <rect key="frame" x="0.0" y="65" width="414" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="7BE-1l-qEf"/>
@@ -141,11 +141,31 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="dAT-xj-MTk" id="35c-WG-97M"/>
+                        <outlet property="searchBar" destination="3A0-Ld-ykf" id="R2f-jN-AsD"/>
+                        <segue destination="6pf-0z-Hoe" kind="show" identifier="PokemonDetailsVC" action="showDetailViewController:sender:" id="XgO-J5-2na"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.23188405797103" y="138.58695652173915"/>
+        </scene>
+        <!--Pokemon DetailsVC-->
+        <scene sceneID="jX9-VV-44j">
+            <objects>
+                <viewController id="6pf-0z-Hoe" customClass="PokemonDetailsVC" customModule="pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wr0-fK-LFt"/>
+                        <viewControllerLayoutGuide type="bottom" id="eht-30-0Yf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o8J-Xu-eYM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fTs-0P-wnt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="139"/>
         </scene>
     </scenes>
     <resources>
