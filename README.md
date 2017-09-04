@@ -6,8 +6,8 @@ Is a swift App for studying purposes. This app tends to show 718 pokemon in a gr
 I currently making this app while watching tutorial videos
 
 # Learing:
-  * Calling API 
+  * Calling API - Cocoapods
   * Parsing response JSON
-  * Using grid view
+  * Using collection view
   * Implementing search bar 
   * Using GitHub and make my first reposetory 
