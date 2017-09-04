@@ -145,7 +145,7 @@ class Pokemon {
                                 self._nextEvolutionId  = nextPoke
                                 
                                 if self._nextEvolutionId != nil {
-                                    self._nextEvolution = "Next Evolution: \(nextEvoPokeName) LVL \(level)"
+                                    self._nextEvolution = "Next Evolution: \(nextEvoPokeName) - LVL \(level)"
                                 } else {
                                     self._nextEvolution = "Next Evolution: None"
                                 }
@@ -165,8 +165,7 @@ class Pokemon {
                             if let descs = descriptionResponse.value as? Dictionary<String, Any> {
                                 
                                 if let desc = descs["description"] as? String {
-                                    desc = desc.replacingOccurrences(of: "POKMON", with: "Pokemon")
-                                    self._description = desc.capitalized
+                                    self._description = desc.replacingOccurrences(of: "POKMON", with: "Pokemon").capitalized
                                 }
                             }
                             
